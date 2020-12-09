@@ -1,0 +1,11 @@
+# add these packages to all features to work
+jupyter-contrib-nbextensions==0.5
+jupyterhub==1.2.2
+nbgitpuller==0.9.0
+nbresuse==0.3.*
+https://github.com/IllumiDesk/nbgrader/archive/v0.64.2.zip
+jupyter-server-proxy==1.5.0
+jupyterlab==2.2.8
+jupyter-rsession-proxy
+psycopg2-binary==2.8.*
+nbconvert==5.*

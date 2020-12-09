@@ -4,18 +4,10 @@ c = get_config()
 # load base config
 load_subconfig('/etc/jupyter/jupyter_notebook_config_base.py')
 
-# monkeypatch for python3.7
-try:
-    from http.cookies import Morsel
-except ImportError:
-    from Cookie import Morsel
-
-Morsel._reserved[str('samesite')] = str('SameSite')
-
 # supports iframe and samesite cookies
 c.NotebookApp.tornado_settings = {
     "headers": {"Content-Security-Policy": "frame-ancestors 'self' *"},
-    "cookie_options": {"SameSite": "None", "Secure": True},
+    "cookie_options": {"SameSite": None, "Secure": True},
 }
 c.NotebookApp.allow_root = True
 c.NotebookApp.allow_origin = '*'

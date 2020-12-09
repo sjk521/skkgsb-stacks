@@ -12,7 +12,8 @@ LOGGER = logging.getLogger(__name__)
 @pytest.mark.parametrize(
     'language,version_output',
     [
-        ('python', ['Python', '3.7.9\n']),
+        ('python', ['Python', '3.8.6\n']),
+        ('R', ['R', 'version', '3.6.3',],),
     ],
 )
 def test_languages(language, version_output):

@@ -1,4 +1,5 @@
-FROM illumidesk/illumidesk-notebook:latest
+# Override the base image as needed and build with docker's --build-arg flag.
+FROM illumidesk/vscode-workspace:latest
 
 # add group id since its not included by repo2docker but we need it
 # to run fix-permissions

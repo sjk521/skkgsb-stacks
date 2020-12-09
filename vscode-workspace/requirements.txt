@@ -1,0 +1,2 @@
+# add these packages to all features to work
+https://github.com/IllumiDesk/illumidesk-vscode-proxy/archive/v0.1.2.zip
