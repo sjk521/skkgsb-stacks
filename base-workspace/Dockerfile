@@ -1,6 +1,5 @@
-## Commit from circa mid 11/2020
 ## Base image based on ubuntu:focal with py3.8
-FROM jupyter/minimal-notebook:42f4c82a07ff
+FROM jupyter/scipy-notebook:67b8fb91f950
 
 ## Declares build arguments
 ARG NB_USER=jovyan

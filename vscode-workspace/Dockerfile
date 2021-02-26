@@ -1,4 +1,4 @@
-FROM illumidesk/r-workspace:latest
+FROM illumidesk/base-workspace:latest
 
 COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt

@@ -27,7 +27,7 @@ make build-all
 Running the image standalone is helpful for testing:
 
 ```bash
-docker run -p 8888:8888 illumidesk/r-notebook:latest
+docker run -p 8888:8888 illumidesk/base-workspace:latest
 ```
 
 Then, navigate to `http://localhost:8888` to access your Jupyter Notebook server.
